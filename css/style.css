@@ -419,9 +419,7 @@ img {
   display: flex;
   align-items: baseline;
 }
-.footer-position:last-child {
-  justify-content: end;
-}
+
 .footer-container {
   margin-right: 70px;
 }
@@ -455,9 +453,7 @@ img {
 .connect-link {
   color: rgba(225, 225, 225, 0.6);
 }
-.join {
-  margin-right: 93px;
-}
+
 .join-title,
 .subscribe-title {
   margin-bottom: 20px;
@@ -485,8 +481,13 @@ img {
   background-color: var(--accent-color);
 }
 
-.input-footer-wrap {
+.form {
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.subscribe-wrap {
+  margin-left: auto;
 }
 .input-footer {
   padding-left: 16px;
@@ -507,11 +508,13 @@ img {
   padding: 10px 29px;
   width: 200px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  transition: background-color 250ms var(--animation-time);
+  transform: scale(1);
+  transition: background-color var(--animation-time), transform var(--animation-time);
 }
 .footer-btn:hover,
 .footer-btn:focus {
   background-color: #188ce8;
+  transform: scale(1.05);
 }
 
 .icon-telegram {
@@ -570,7 +573,6 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
   perspective: 600px;
-  transition: fill var(--animation-time);
 }
 .icon-close-modal {
   width: 18px;
@@ -595,7 +597,7 @@ img {
   border-radius: 4px;
   background-color: transparent;
   outline: transparent;
-  transition: border var(--animation-time), fill var (--animation-time);
+  transition: border var(--animation-time);
 }
 .form-child:focus {
   border: 1px solid var(--accent-color);
@@ -615,6 +617,7 @@ img {
   left: 12px;
   top: 50%;
   transform: translatey(-50%);
+  transition: fill var (--animation-time);
 }
 .modal-input:focus + .input-icon {
   fill: var(--accent-color);
