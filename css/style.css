@@ -7,7 +7,10 @@
   --backgound-second-color: #f5f4fa;
   --accent-color: #2196f3;
   --header-footer-background-color: #2f303a;
-  --team-icon-color: #afb1b8;
+  --main-icon-color: #afb1b8;
+  --primary-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway';
+  --letter-spacing: 0.03em;
   --typical-margin: 30px;
   --animation-time: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -16,9 +19,9 @@
 body {
   background-color: var(--background-main-color);
   color: var(--main-text-color);
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--primary-font);
   font-size: 14px;
-  letter-spacing: 0.03em;
+  letter-spacing: var(--letter-spacing);
 }
 h1,
 h2,
@@ -83,10 +86,15 @@ img {
 .header {
   border-bottom: 1px solid #ececec;
 }
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
 /* -------------------------------LOGO------------------------------------------------- */
 .header-logo,
 .footer-logo {
-  font-family: 'Raleway';
+  font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -97,10 +105,7 @@ img {
 }
 
 /* -------------------------------NAV------------------------------------------------ */
-.header .container {
-  display: flex;
-  align-items: center;
-}
+
 .nav {
   display: flex;
   align-items: center;
@@ -367,7 +372,7 @@ img {
   fill: var(--accent-text-color);
 } */
 .team-soc-link {
-  color: var(--team-icon-color);
+  color: var(--main-icon-color);
 }
 .team-soc-icon {
   fill: currentColor;
@@ -393,7 +398,7 @@ img {
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  color: var(--team-icon-color);
+  color: var(--main-icon-color);
   transition: color var(--animation-time), border var(--animation-time);
 }
 .clients-icon {
