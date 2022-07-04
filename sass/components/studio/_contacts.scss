@@ -1,0 +1,22 @@
+.contact-link {
+  display: flex;
+  align-items: center;
+}
+
+.contact {
+  display: flex;
+  margin-left: auto;
+  &-item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.color-contact {
+  color: var(--main-text-color);
+}
+
+.tel-soc-icon,
+.mail-soc-icon {
+  fill: currentColor;
+  margin-right: 10px;
+}

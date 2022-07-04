@@ -1,0 +1,118 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--header-footer-background-color);
+}
+.footer-position {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-container {
+  margin-right: 70px;
+}
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.logo-white {
+  color: var(--accent-text-color);
+}
+
+.address {
+  font-weight: 400px;
+  line-height: 1.71;
+  transition: color var(--animation-time);
+
+  &-item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+.address-list {
+  font-style: normal;
+}
+.address-link {
+  color: var(--accent-text-color);
+}
+.connect-link {
+  color: rgba(225, 225, 225, 0.6);
+}
+
+.join-title,
+.subscribe-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: var(--accent-text-color);
+}
+.join-soc-list {
+  display: flex;
+  justify-content: center;
+}
+.join-soc-item:not(:last-child) {
+  margin-right: 10px;
+}
+.join-soc-link {
+  color: var(--accent-text-color);
+  background-color: rgba(255, 255, 255, 0.1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+.join-soc-link {
+  fill: currentColor;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.subscribe-wrap {
+  margin-left: auto;
+}
+.input-footer {
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-right: 12px;
+  width: 358px;
+  background-color: transparent;
+  outline: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  color: var(--accent-text-color);
+
+  &:focus {
+    border: 1px solid var(--accent-color);
+  }
+}
+
+.footer-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 29px;
+  width: 200px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transform: scale(1);
+  transition: background-color var(--animation-time), transform var(--animation-time);
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+    transform: scale(1.05);
+  }
+}
+
+.icon-telegram {
+  margin-left: 10px;
+  fill: currentColor;
+}
