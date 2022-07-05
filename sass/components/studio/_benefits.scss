@@ -1,6 +1,6 @@
+// placeholders
 .benefits-list {
-  display: flex;
-  align-items: center;
+  @extend %align-list;
 }
 
 .benefits-item {
@@ -13,9 +13,8 @@
     content: '';
     height: 120px;
     border-radius: 4px;
+    @extend %background-consist;
     background-size: 70px;
-    background-repeat: no-repeat;
-    background-position: center;
     background-color: var(--backgound-second-color);
   }
 }

@@ -6,8 +6,7 @@
 }
 
 .clients-link {
-  display: flex;
-  align-items: center;
+  @extend %align-list;
   justify-content: center;
   width: 170px;
   height: 92px;

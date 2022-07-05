@@ -71,8 +71,7 @@
 }
 
 .form {
-  display: flex;
-  align-items: center;
+  @extend %align-list;
   justify-content: center;
 }
 .subscribe-wrap {
