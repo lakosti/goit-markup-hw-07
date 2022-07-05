@@ -1,21 +1,21 @@
-// .contact-link {
-//   @extend %align-list;
-// }
-
 .contact {
-  display: flex;
+  @extend %align-list;
+  justify-content: center;
   margin-left: auto;
-  &-item:not(:last-child) {
+  &__item:not(:last-child) {
     margin-right: 50px;
   }
 }
-
-.color-contact {
+.contact__link {
+  display: flex;
+  align-items: center;
+}
+.contact--color {
   color: var(--main-text-color);
 }
 
-.tel-soc-icon,
-.mail-soc-icon {
+.contact__tel__icon,
+.contact__mail__icon {
   fill: currentColor;
   margin-right: 10px;
 }

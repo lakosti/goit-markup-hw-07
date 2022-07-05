@@ -1,16 +1,16 @@
 .work {
   padding-top: 0px;
 }
-.work-list {
+.work__list {
   display: flex;
   margin: -15px;
 }
-.work-item {
+.work__item {
   position: relative;
   flex-basis: calc(100% / 3 - 30px);
   margin: 15px;
 }
-.work-absolute {
+.work__absolute {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -22,11 +22,10 @@
   color: var(--accent-text-color);
   background-color: rgba(47, 48, 58, 0.8);
 }
-.work-title,
-.team-title,
-.clients-title {
+.work__title,
+.team__title,
+.clients__title {
   margin-bottom: 50px;
-
   color: var(--second-text-color);
   @include font(null, 36px, 1.16, null);
   text-align: center;

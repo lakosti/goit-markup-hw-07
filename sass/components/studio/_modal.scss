@@ -30,7 +30,7 @@
   background-color: var(--background-main-color);
   @include transit(transform);
 }
-.modal-title {
+.modal-form__title {
   margin-bottom: 12px;
   @include font(700, 20px, 1.15, null);
   text-align: center;
@@ -44,16 +44,17 @@
 .modal-field:hover .input-wrap {
   border: 1px solid var(--accent-color);
 } */
-.modal-input {
+.modal-field__input {
   padding: 11px 42px;
   height: 40px;
 }
-.modal-label {
+.modal-field__label,
+.textarea-wrap__label {
   display: block;
   margin-bottom: 4px;
   @include font(null, 12px, 1.16, 0.01em);
 }
-.close-modal-bnt {
+.modal__close-bnt {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -75,7 +76,7 @@
     transform: rotate(90deg);
   }
 }
-.icon-close-modal {
+.modal__close-icon {
   width: 18px;
   height: 18px;
   @include transit(fill);
@@ -94,24 +95,24 @@
   }
 }
 
-.input-wrap {
+.modal-field__wrap {
   position: relative;
 }
-.input-icon {
+.modal-field__icon {
   position: absolute;
   left: 12px;
   top: 50%;
   transform: translatey(-50%);
   transition: fill var (--animation-time);
-  .modal-input:focus + & {
+  .modal-field__input:focus + & {
     fill: var(--accent-color);
   }
 }
 
-.modal-textarea-wrap {
+.textarea-wrap {
   margin-bottom: 20px;
 }
-.modal-textarea {
+.textarea-wrap__textarea {
   height: 120px;
   padding: 12px 16px;
   resize: none;
@@ -122,21 +123,23 @@
   }
 }
 
-.modal-checkbox-wrap {
+// ----------------------------------------CHECKBOX-----------------------------
+
+.modal-checkbox {
   display: flex;
   align-items: baseline;
   margin-bottom: var(--typical-margin);
 }
-.input-check {
+.modal-checkbox__input {
   padding-left: 54px;
 }
-.check-text {
+.modal-checkbox__label {
   display: flex;
   align-items: center;
   justify-content: center;
   @include font(400, null, 1.71, null);
 }
-.check-text span {
+.modal-checkbox__label span {
   width: 16px;
   height: 15px;
   border: 2px solid var(--second-text-color);
@@ -165,18 +168,18 @@
   background-position: center;
 } */
 
-.check-icon {
+.modal-checkbox__icon {
   fill: transparent;
-  .input-check:checked + .check-text & {
+  .modal-checkbox__input:checked + .modal-checkbox__label & {
     fill: var(--background-main-color);
   }
 }
-.input-check:checked + .check-text span {
+.modal-checkbox__input:checked + .modal-checkbox__label span {
   background-color: var(--accent-color);
   border: none;
 }
 
-.check-text-link {
+.modal-checkbox__link {
   color: var(--accent-color);
 }
 

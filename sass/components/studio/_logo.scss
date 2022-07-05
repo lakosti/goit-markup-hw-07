@@ -1,12 +1,11 @@
-.header-logo,
-.footer-logo {
+.logo {
   font-family: var(--secondary-font);
   @include font(700, 26px, 1.19, null);
   color: var(--accent-color);
 }
-.header-logo {
+.header__logo {
   margin-right: 93px;
 }
-.logo-black {
+.logo--black {
   color: var(--black-text-color);
 }

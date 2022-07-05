@@ -11,52 +11,54 @@
 .footer-container {
   margin-right: 70px;
 }
-.footer-logo {
+.footer-container__logo {
   display: inline-block;
   margin-bottom: 20px;
 }
-.logo-white {
+.logo--white {
   color: var(--accent-text-color);
 }
 
-.address {
+.address__street {
   font-weight: 400px;
   line-height: 1.71;
   @include transit(color);
-  &-item:not(:last-child) {
-    margin-bottom: 9px;
-  }
   &:hover,
   &:focus {
     color: var(--accent-color);
   }
 }
-.address-list {
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.address__list {
   font-style: normal;
 }
-.address-link {
+.address__link {
   color: var(--accent-text-color);
 }
-.connect-link {
+.address__connect-link {
   color: rgba(225, 225, 225, 0.6);
 }
 
-.join-title,
-.subscribe-title {
+// ----------------------------------JOIN-----------------------------------
+
+.join__title,
+.wrap__title {
   margin-bottom: 20px;
   font-weight: 700;
   line-height: 16px;
   text-transform: uppercase;
   color: var(--accent-text-color);
 }
-.join-soc-list {
+.join-soc__list {
   display: flex;
   justify-content: center;
 }
-.join-soc-item:not(:last-child) {
+.join-soc__item:not(:last-child) {
   margin-right: 10px;
 }
-.join-soc-link {
+.join-soc__link {
   color: var(--accent-text-color);
   background-color: rgba(255, 255, 255, 0.1);
 
@@ -65,10 +67,11 @@
     background-color: var(--accent-color);
   }
 }
-.join-soc-link {
+.join-soc__link {
   fill: currentColor;
 }
 
+// ----------------------------FOOTER FORM----------------------------------
 .form {
   @extend %align-list;
   justify-content: center;
@@ -76,7 +79,7 @@
 .subscribe-wrap {
   margin-left: auto;
 }
-.input-footer {
+.input-mail {
   padding-left: 16px;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -114,7 +117,7 @@
   }
 }
 
-.icon-telegram {
+.btn__icon-telegram {
   margin-left: 10px;
   fill: currentColor;
 }

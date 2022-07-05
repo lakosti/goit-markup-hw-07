@@ -1,17 +1,17 @@
 .nav {
   @extend %align-list;
 }
-.nav-list {
+.nav__list {
   display: flex;
 }
-.nav-item {
+.nav__item {
   position: relative;
   &:not(:last-child) {
     margin-right: 50px;
   }
 }
-.nav-link,
-.contact-link {
+.nav__link,
+.contact__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -24,7 +24,7 @@
   }
 }
 
-.active {
+.nav__active {
   color: var(--accent-color);
   &::after {
     position: absolute;

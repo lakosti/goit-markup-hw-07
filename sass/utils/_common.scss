@@ -27,8 +27,7 @@ img {
   padding-bottom: 94px;
 }
 .soc-link {
-  display: flex;
-  align-items: center;
+  @extend %align-list;
   justify-content: center;
   width: 100%;
   height: 100%;

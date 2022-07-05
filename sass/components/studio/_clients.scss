@@ -1,11 +1,11 @@
-.clients-list {
+.clients__list {
   display: flex;
 }
-.clients-item:not(:last-child) {
+.clients__item:not(:last-child) {
   margin-right: var(--typical-margin);
 }
 
-.clients-link {
+.clients__link {
   @extend %align-list;
   justify-content: center;
   width: 170px;
@@ -20,6 +20,6 @@
     border: 1px solid var(--accent-color);
   }
 }
-.clients-icon {
+.clients__icon {
   fill: currentColor;
 }
