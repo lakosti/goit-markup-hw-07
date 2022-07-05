@@ -22,8 +22,7 @@
 .address {
   font-weight: 400px;
   line-height: 1.71;
-  transition: color var(--animation-time);
-
+  @include transit(color);
   &-item:not(:last-child) {
     margin-bottom: 9px;
   }
@@ -88,9 +87,13 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   color: var(--accent-text-color);
+  @include transit(border);
 
-  &:focus {
+  &:hover {
     border: 1px solid var(--accent-color);
+  }
+  &:focus {
+    border: 1px solid var(--accent-text-color);
   }
 }
 

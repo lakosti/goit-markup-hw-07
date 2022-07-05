@@ -14,11 +14,8 @@
   margin-bottom: var(--typical-margin);
 
   color: var(--accent-text-color);
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  @include font(900, 44px, 1.36, 0.06em);
   text-align: center;
-  letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 .btn {
@@ -29,11 +26,8 @@
   cursor: pointer;
 
   font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
+  @include font(700, 16px, 1.88, 0.06em);
   text-align: center;
-  letter-spacing: 0.06em;
 
   background-color: var(--accent-color);
   color: var(--accent-text-color);
@@ -42,7 +36,7 @@
 .form-btn {
   padding: 10px 32px;
   transform: scale(1);
-  transition-duration: 500ms;
+  @include transit(transform);
 
   &:hover,
   &:focus {

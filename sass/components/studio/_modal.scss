@@ -6,7 +6,7 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  transition: opacity var(--animation-time);
+  @include transit(opacity);
 }
 .is-hidden {
   opacity: 0;
@@ -28,19 +28,17 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   background-color: var(--background-main-color);
-  transition: transform var(--animation-time);
+  @include transit(transform);
 }
 .modal-title {
-  font-weight: 700;
   margin-bottom: 12px;
-  font-size: 20px;
-  line-height: calc(23 / 20);
+  @include font(700, 20px, 1.15, null);
   text-align: center;
   color: var(--second-text-color);
 }
 .modal-field {
   margin-bottom: 10px;
-  transition: border-color var(--animation-time);
+  @include transit(border-color);
 }
 /* .modal-field:focus-within .input-wrap,
 .modal-field:hover .input-wrap {
@@ -53,9 +51,7 @@
 .modal-label {
   display: block;
   margin-bottom: 4px;
-  font-size: 12px;
-  line-height: calc(14 / 12);
-  letter-spacing: 0.01em;
+  @include font(null, 12px, 1.16, 0.01em);
 }
 .close-modal-bnt {
   position: absolute;
@@ -70,16 +66,19 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
   perspective: 600px;
+  transform: rotate(0deg);
+  @include transit(transform);
 
   &:hover,
   &:focus {
     fill: var(--accent-color);
+    transform: rotate(90deg);
   }
 }
 .icon-close-modal {
   width: 18px;
   height: 18px;
-  transition: fill var(--animation-time);
+  @include transit(fill);
 }
 
 .form-child {
@@ -88,7 +87,7 @@
   border-radius: 4px;
   background-color: transparent;
   outline: transparent;
-  transition: border var(--animation-time);
+  @include transit(border-color);
 
   &:focus {
     border: 1px solid var(--accent-color);
@@ -118,10 +117,7 @@
   resize: none;
 
   &::placeholder {
-    font-size: 12px;
-    line-height: calc(14 / 12);
-    letter-spacing: 0.01em;
-
+    @include font(null, 12px, 1.16, 0.01em);
     color: rgba(117, 117, 117, 0.5);
   }
 }
@@ -129,7 +125,6 @@
 .modal-checkbox-wrap {
   display: flex;
   align-items: baseline;
-
   margin-bottom: var(--typical-margin);
 }
 .input-check {
@@ -139,8 +134,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 400;
-  line-height: 1.71;
+  @include font(400, null, 1.71, null);
 }
 .check-text span {
   width: 16px;
@@ -192,5 +186,5 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   transition-duration: 500ms;
   transform: scale(1.01);
-  transition: transform var(--animation-time);
+  @include transit(transform);
 }

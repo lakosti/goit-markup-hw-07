@@ -15,12 +15,9 @@
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @include font(500, null, 1.14, 0.01em);
   color: var(--second-text-color);
-  transition: color var(--animation-time);
+  @include transit(color);
   &:hover,
   &:focus {
     color: var(--accent-color);
