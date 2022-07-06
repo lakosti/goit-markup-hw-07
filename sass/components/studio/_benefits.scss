@@ -18,18 +18,22 @@
     background-color: var(--backgound-second-color);
   }
 }
-
+// @each $benefits in antenna, time, diagram, feature {
+//   .#{$benefits}__icon {
+//     background-image: url('../images/#{$benefits}.svg');
+//   }
+// }
 .benefits__icon-antena::before {
-  background-image: url(../images/icon-antenna.svg);
+  background-image: url(../images/antenna.svg);
 }
 .benefits__icon-time::before {
-  background-image: url(../images/icon-time.svg);
+  background-image: url(../images/time.svg);
 }
 .benefits__icon-diagram::before {
-  background-image: url(../images/icon-diagram.svg);
+  background-image: url(../images/diagram.svg);
 }
 .benefits__icon-feature::before {
-  background-image: url(../images/icon-feature.svg);
+  background-image: url(../images/feature.svg);
 }
 .benefits__subtitle {
   margin-top: 30px;

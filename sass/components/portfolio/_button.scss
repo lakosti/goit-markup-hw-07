@@ -16,15 +16,15 @@
   }
 }
 
-.portfolio-list {
+.radio-button {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
-.portfolio-item:not(:last-child) {
+.radio-button__item:not(:last-child) {
   margin-right: 8px;
 }
-.portfolio-btn-text {
+.radio-button__text {
   font-family: inherit;
   @include font(500, 16px, 1.62, null);
   text-align: center;

@@ -1,10 +1,12 @@
 .contact {
   @extend %align-list;
   justify-content: center;
-  margin-left: auto;
   &__item:not(:last-child) {
     margin-right: 50px;
   }
+}
+.nav-contact {
+  margin-left: auto;
 }
 .contact__link {
   display: flex;

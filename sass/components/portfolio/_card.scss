@@ -3,22 +3,22 @@
   flex-wrap: wrap;
   margin: -15px;
 }
-.card-item {
+.card__item {
   flex-basis: calc(100% / 3 - 30px);
   margin: 15px;
 }
-.card-relative {
+.card__relative {
   position: relative;
   height: 294px;
   overflow: hidden;
 }
 
-.card-subtitle {
+.card__subtitle {
   margin-bottom: 4px;
   color: var(--second-text-color);
   @include font(null, 18px, 2, 0.06em);
 }
-.card-link {
+.card__link {
   display: block;
   color: inherit;
 
@@ -28,7 +28,7 @@
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
 }
-.card-absolute {
+.card__absolute {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -44,16 +44,16 @@
   @include transit(transform);
   color: var(--accent-text-color);
   background-color: rgba(33, 150, 243, 0.9);
-  .card-link:hover &,
-  .card-link:focus & {
+  .card__link:hover &,
+  .card__link:focus & {
     transform: translatey(0);
     background-color: rgba(33, 150, 243, 0.9);
   }
 }
-.card-text {
+.card__text {
   @include font(null, 16px, 1.88, null);
 }
-.card-text-possition {
+.card__text-possition {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: 0;

@@ -34,41 +34,28 @@
 .address__list {
   font-style: normal;
 }
-.address__link {
+.address__address--link {
   color: var(--accent-text-color);
 }
-.address__connect-link {
+.address__connect--link {
   color: rgba(225, 225, 225, 0.6);
 }
 
 // ----------------------------------JOIN-----------------------------------
 
-.join__title,
-.wrap__title {
-  margin-bottom: 20px;
+.footer-title {
   font-weight: 700;
   line-height: 16px;
   text-transform: uppercase;
   color: var(--accent-text-color);
 }
-.join-soc__list {
-  display: flex;
-  justify-content: center;
+.footer--title {
+  margin-bottom: 20px;
 }
-.join-soc__item:not(:last-child) {
-  margin-right: 10px;
-}
-.join-soc__link {
+
+.join--soc--link {
   color: var(--accent-text-color);
   background-color: rgba(255, 255, 255, 0.1);
-
-  &:hover,
-  &:focus {
-    background-color: var(--accent-color);
-  }
-}
-.join-soc__link {
-  fill: currentColor;
 }
 
 // ----------------------------FOOTER FORM----------------------------------
@@ -83,7 +70,6 @@
   padding-left: 16px;
   padding-top: 15px;
   padding-bottom: 15px;
-  margin-right: 12px;
   width: 358px;
   background-color: transparent;
   outline: transparent;
@@ -99,22 +85,15 @@
     border: 1px solid var(--accent-text-color);
   }
 }
-
+.input-mail--right {
+  margin-right: 12px;
+}
 .footer-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 10px 29px;
   width: 200px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  transform: scale(1);
-  transition: background-color var(--animation-time), transform var(--animation-time);
-
-  &:hover,
-  &:focus {
-    background-color: #188ce8;
-    transform: scale(1.05);
-  }
+  transition: background-color var(--animation-time), transform var(--animation-time),
+    box-shadow var(--animation-time);
 }
 
 .btn__icon-telegram {
